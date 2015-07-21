@@ -1,11 +1,18 @@
 # vagrant-zombie-riak
 
 
-This is a complete demo that spins up the [Zombie Inverted-Index demo](https://github.com/drewkerrigan/riak-inverted-index-demo) on the same VM as the [Vagrant Ruby Client](https://github.com/basho-labs/riak-ruby-vagrant) environment.
+This is a self-contained demo that spins up the [Zombie Inverted-Index demo](https://github.com/drewkerrigan/riak-inverted-index-demo) on the same VM as the [Vagrant Ruby Client](https://github.com/basho-labs/riak-ruby-vagrant) environment. 
 
-It's not designed for production use. **Do not use this in production.**
+While this app is well-designed, this project is not designed for production use. **Do not use this in production.**
+
+### Read More
+
+* Read the [Riak Zombie Revival blog post](http://basho.com/posts/technical/reviving-the-zombie-app-for-oscon/)
+* See [the app live on AWS](http://54.147.200.141:8080/) (which uses our [2.1.1 AMI](https://aws.amazon.com/marketplace/pp/B00YFZ60X2/ref=sp_mpg_product_title?ie=UTF8&sr=0-2))
 
 ## Getting Started
+
+**Note on Internets**: An Internet connection is required to run `vagrant up`. If you want to spin up the demo and save it for later, run the initial `vagrant up` mentioned below and then `vagrant suspend` to save it. You can run `vagrant resume` when you're ready to demo (no connection required).
 
 0. If you haven't got it, install [Vagrant](http://vagrantup.com).
 1. If you haven't got it or another Vagrant-supported virtualization
@@ -62,7 +69,9 @@ Disabled
 
 ## Contributing
 
-**TODO** - note that projects that extend on this repository will be linked to in the [vagrant-riak-meta](https://github.com/basho-labs/vagrant-riak-meta). Share them via issues on [the Community repo](https://github.com/basho-labs/the-riak-community)!
+Review the details in [CONTRIBUTING.md](CONTRIBUTING.md) in order to give back to this project.
+
+Note that projects that extend on this repository will be linked to in the [vagrant-riak-meta](https://github.com/basho-labs/vagrant-riak-meta). Share them via issues on [the Community repo](https://github.com/basho-labs/the-riak-community)!
 
 
 ## License and Authors
